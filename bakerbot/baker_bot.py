@@ -9,7 +9,7 @@ import base64
 
 #https://discord.gg/sTWRrV7
 logging.basicConfig(level=logging.INFO)
-DB_PATH = r'./refunds.live'
+DB_PATH = r'../php/respectable_establishment/refunds.live'
 INFO_CHANNEL = 'info'
 BEETS_CHANNEL = 'beetcoin'
 BEET_REPLIES = ['sick beets', 'reasonable effort..', 'this beet is quite a hit', 'beetlejuice?',
@@ -32,13 +32,13 @@ async def on_message(message):
     
     if (int(message.author.id) in ADMIN_IDS and str(message.channel) == INFO_CHANNEL):
         if message.content.startswith('!refund'):
-            try:
+            #try:
                 tmp, token, key = message.content.split(' ')
                 current_db = json.load(open(DB_PATH,'r'))
                 current_db[token] = key
                 json.dump(current_db, open(DB_PATH, 'w'))
                 tmp = await client.send_message(message.channel, "refund order sent")
-            except:
+            #except:
                 tmp = await client.send_message(message.channel, "request denied due to shenanigans")
                 
     if str(message.channel) == BEETS_CHANNEL:
