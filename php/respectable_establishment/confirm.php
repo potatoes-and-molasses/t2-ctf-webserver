@@ -4,7 +4,7 @@ $logEntry->date = date('Y-m-d H:i:s');
 $logEntry->ip = $_SERVER['REMOTE_ADDR'];
 $logEntry->token = $_GET["t"] or die("\nbye:(");
 
-$url = "https://discordapp.com/api/webhooks/413276274929303562/hZrdfDKNtRRcfzF78YyfKdYJzJKksMxw2RBjbTbHVlOSiL2EsuYd6547eoODAItzgCZW";
+$url = getenv('BAKER_WEBHOOK')
 
 $data = array("content"=>("new breadsticks order received:\n" . json_encode($logEntry)), "user"=>"baker");
 

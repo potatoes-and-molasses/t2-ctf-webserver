@@ -22,7 +22,7 @@ CONFIG = get_config(ASAF_APIENDPOINT, TEAM_NAME, 'web')
 ADMIN_IDS = CONFIG['data']['adminIds']
 CLIENT_TOKEN = CONFIG['data']['discordToken']
 
-#https://discord.gg/sTWRrV7
+#DISCORD_INVITE_STANDIN
 logging.basicConfig(level=logging.INFO)
 DB_PATH = r'/var/www/html/php/respectable_establishment/refunds.live'
 INFO_CHANNEL = 'info'
