@@ -24,7 +24,7 @@ CLIENT_TOKEN = CONFIG['data']['discordToken']
 
 #DISCORD_INVITE_STANDIN
 logging.basicConfig(level=logging.INFO)
-DB_PATH = r'/var/www/html/php/respectable_establishment/refunds.live'
+DB_PATH = r'/var/www/html/respectable_establishment/refunds.live'
 INFO_CHANNEL = 'info'
 BEETS_CHANNEL = 'beetcoin'
 BEET_REPLIES = ['sick beets', 'reasonable effort..', 'this beet is quite a hit', 'beetlejuice?',
