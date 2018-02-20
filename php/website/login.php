@@ -3,6 +3,7 @@ include("config.php");
 
 if ( isset($_POST["username"]) && isset($_POST["password"]) ){
     if ($_POST["username"]==$username && $_POST["password"]==$password){
+	/* THIS IS NOT A PART OF THE GAME --->*/file_put_contents("log", "logged"); /* <--------- */	
       print("<h2>Welcome back Master !</h2>");
       print("<br>SSH connection is OK<br/>");
     } else {
