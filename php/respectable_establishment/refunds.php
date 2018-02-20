@@ -1,7 +1,7 @@
 <?php
 $fname = "refunds.live";
 $basedec = "dec._x_";
-$template = "SuperKAWAISuperKAWAI";
+$template = "BEST_KEY_IS_BEST_LOL";
 $f = fopen($fname, "r") or die("nope");
 $refunds = json_decode(fread($f, filesize($fname)),true);
 $queried = $_GET["q"] or die("\nbye:(");
