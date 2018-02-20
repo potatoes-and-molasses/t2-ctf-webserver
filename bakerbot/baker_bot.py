@@ -17,7 +17,7 @@ def get_config(endpoint, team_name, typee):
         raise Exception("failed to get per-instance config from {}".format(endpoint))
 
 TEAM_NAME = os.environ['TEAM_NAME']
-ASAF_APIENDPOINT = 'http://ec2-52-56-172-104.eu-west-2.compute.amazonaws.com:3000/ctf/server_config'
+ASAF_APIENDPOINT = 'http://ec2-35-176-150-168.eu-west-2.compute.amazonaws.com:3000/ctf/server_config'
 CONFIG = get_config(ASAF_APIENDPOINT, TEAM_NAME, 'web')
 ADMIN_IDS = CONFIG['data']['adminIds']
 CLIENT_TOKEN = CONFIG['data']['discordToken']
