@@ -6,7 +6,7 @@ import sys
 i = 1 
 while i:
 
-    f= open("log" , 'r')
+    f= open("/var/www/html/website/log" , 'r')
     for line in f:
         
         if 'logged' in line :
