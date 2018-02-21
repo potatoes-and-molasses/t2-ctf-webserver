@@ -2,7 +2,6 @@ import time
 import os
 import requests
 import sys
-
 i = 1 
 while i:
 
@@ -24,7 +23,7 @@ while i:
                     f.close()
                     sys.exit(0)
                 
-            except requests.exceptions.RequestException as e:
+            except requests.exceptions.RequestException as e:  # This is the correct syntax
                 print e
                 sys.exit(1)
             
