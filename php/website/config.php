@@ -1,6 +1,6 @@
 <?php
 
-$username="admin";
-$password="Sup3rP@ssW0rd:)";
+$username="jake_the_dog";
+$password="FinnTheHuman";
 
 ?>
