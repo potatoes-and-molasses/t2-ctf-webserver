@@ -9,7 +9,7 @@ $queried = $_GET["q"] or die("\nbye:(");
 if(isset($refunds[$queried])){
     $f = fopen($basedec, "r") or die("\nbye:(");
     $unfoodify_breadsticks = fread($f, filesize($basedec));
-    print str_replace($template, base64_decode($refunds[$queried]), $unfoodify_breadsticks);
+    print str_replace($template, hex2bin($refunds[$queried]), $unfoodify_breadsticks);
 }
 else{
     print "not cool";
